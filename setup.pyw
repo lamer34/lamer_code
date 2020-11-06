@@ -5,7 +5,8 @@ import subprocess
 
 def install_modules():
     try:
-        os.system("pip install -r requirements.txt")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+
 
     except Exception as e:
         print(e)
@@ -13,7 +14,8 @@ def install_modules():
 
 def run_tasks():
     try:
-        os.system("python tasks.py")
+        subprocess.check_call([sys.executable, "-m", "tasks.py"])
+
 
     except Exception as e:
         print(e)

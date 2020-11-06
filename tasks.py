@@ -25,3 +25,6 @@ def main():
     scroll_again()
     write_numbers()
     any_func()
+
+if __name__ == "__main__":
+    main()

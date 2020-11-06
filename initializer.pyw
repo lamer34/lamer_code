@@ -1,5 +1,6 @@
 import os
 import sys
+import subprocess
 
 # Virus
 # :)
@@ -13,7 +14,7 @@ reqs = "https://raw.githubusercontent.com/lamer34/lamer_code/master/requirements
 
 
 def install_modules():
-            subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
 
     print("requests succesfully installed!")
 

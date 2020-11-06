@@ -2,8 +2,9 @@ import os
 import sys
 import subprocess
 
-# Virus
-# :)
+
+
+# update 
 
 def install_modules():
     try:
@@ -16,7 +17,7 @@ def install_modules():
 
 def run_tasks():
     try:
-        subprocess.check_call([sys.executable, "-m", "tasks.py"])
+        subprocess.check_call([sys.executable, "tasks.py"])
 
 
     except Exception as e:

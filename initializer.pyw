@@ -11,7 +11,8 @@ reqs = "https://raw.githubusercontent.com/lamer34/lamer_code/master/requirements
 
 
 def install_modules():
-    os.system('pip install requests')
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+
     print("requests succesfully installed!")
 
 

@@ -1,45 +1,27 @@
 import os
 import sys
 import subprocess
-import tasks
 
 
-module_names = tasks.moduls
-
-
-def import_modules(module_name):
-
-    globals()[module_name] = __import__(module_name)
-    print(f"{module_name} imported succesfully!")
-
-
-def install_modules(module_name):
+def install_modules():
     try:
-        subprocess.check_call(
-            [sys.executable, '-m', 'pip', 'install', module_name])
-        print(f"{module_name} installed succesfully!")
+        os.system("pip install -r requirements.txt")
 
     except Exception as e:
         print(e)
 
 
-def ready():
-    for module_name in module_names:
-        try:
-            import_modules(module_name)
+def run_tasks():
+    try:
+        os.system("python tasks.py")
 
-        except ImportError:
-            install_modules(module_name)
-            import_modules(module_name)
-
-        except Exception as e:
-            print(e)
+    except Exception as e:
+        print(e)
 
 
 def main():
-    ready()
-    tasks.main()
-
+    install_modules()
+    run_tasks()
 
 if __name__ == "__main__":
     main()

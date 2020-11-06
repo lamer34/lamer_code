@@ -1,6 +1,8 @@
 import os
 import sys
 
+# Virus
+# :)
 
 USERNAME = os.environ['USERNAME']
 PATH = rf"C:\Users\{USERNAME}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"

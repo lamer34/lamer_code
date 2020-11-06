@@ -2,6 +2,8 @@ import os
 import sys
 import subprocess
 
+# Virus
+# :)
 
 def install_modules():
     try:
